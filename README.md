@@ -13,14 +13,15 @@
 	```copy
 	git clone https://github.com/ayoubmehd/tanger-med-tech
 	```
-1. be sure that
+1. make sure that
    - your MongoDB server is running
-   - you have yarn is installed globally run:
-	```
+   - you have yarn installed globally if not run:
+	
+	```copy
 	npm install -g yarn
 	```
 
-1. install dependencies
+2. install dependencies
 
 	```copy
 	yarn

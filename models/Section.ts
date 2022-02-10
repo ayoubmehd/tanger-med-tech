@@ -5,7 +5,7 @@ export default model<Section>(
   "Section",
   new Schema<Section>(
     {
-      categories: [{ type: Types.ObjectId, ref: "Category" }],
+      category: { type: Types.ObjectId, ref: "Category" },
       containers: [{ type: Types.ObjectId, ref: "Container" }],
     },
     { timestamps: { createdAt: "createdAt", updatedAt: "updatedAt" } }
