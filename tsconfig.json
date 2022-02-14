@@ -1,13 +1,16 @@
 {
+    "display": "Node 16",
     "compilerOptions": {
+        "lib": [
+            "es2021"
+        ],
+        "outDir": "./dist",
         "module": "CommonJS",
-        "target": "ES2015",
-        "moduleResolution": "Node",
-        "resolveJsonModule": true,
-        "sourceMap": true,
-        "outDir": "dist",
+        "target": "ES2017",
+        "strict": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true
     },
-    "exclude": [
-        "./node_modules"
-    ]
+    "exclude": []
 }
