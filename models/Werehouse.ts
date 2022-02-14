@@ -1,5 +1,4 @@
 import { Schema, model } from "mongoose";
-import { Werehouse } from "../@types/Werehouse";
 import size from "./schemas/size";
 
 export default model<Werehouse>(

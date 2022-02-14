@@ -1,5 +1,4 @@
 import { Schema, model, Types } from "mongoose";
-import { Transporter } from "../@types/Transporter";
 
 export default model<Transporter>(
   "Transporter",

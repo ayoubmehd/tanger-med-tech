@@ -1,5 +1,4 @@
 import { Schema, model, Types } from "mongoose";
-import { User } from "../@types/User.d.";
 
 export default model<User>(
   "User",

@@ -1,5 +1,4 @@
 import { Schema, model, Types } from "mongoose";
-import { Section } from "../@types/Section";
 
 export default model<Section>(
   "Section",

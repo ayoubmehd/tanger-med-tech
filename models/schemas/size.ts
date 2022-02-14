@@ -1,5 +1,4 @@
 import { Schema } from "mongoose";
-import { Position } from "../../@types/Position";
 
 export default new Schema<Position>(
   {

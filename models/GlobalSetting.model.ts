@@ -1,5 +1,4 @@
 import { Schema, model } from "mongoose";
-import { GlobalSetting } from "../@types/GlobalSetting";
 
 export default model<GlobalSetting>(
   "Category",

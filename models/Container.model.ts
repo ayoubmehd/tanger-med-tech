@@ -1,5 +1,4 @@
 import { Schema, model, Types } from "mongoose";
-import { Container } from "../@types/Container";
 import position from "./schemas/position";
 import size from "./schemas/size";
 

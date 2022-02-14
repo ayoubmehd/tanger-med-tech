@@ -1,5 +1,4 @@
 import { Schema, model } from "mongoose";
-import { Cour } from "../@types/Cour";
 
 export default model<Cour>(
   "Cour",

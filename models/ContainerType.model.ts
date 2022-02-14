@@ -1,9 +1,8 @@
 import { Schema, model } from "mongoose";
-import { Category } from "../@types/Category";
 
-export default model<Category>(
-  "Category",
-  new Schema<Category>(
+export default model<ContainerType>(
+  "ContainerType",
+  new Schema<ContainerType>(
     {
       label: { type: String, required: true },
     },
