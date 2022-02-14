@@ -1,8 +1,8 @@
 import faker from "@faker-js/faker";
-import Category from "../models/Category";
-import Container from "../models/Container";
-import Cour from "../models/Cour";
-import Section from "../models/Section";
+import Category from "../models/Category.model";
+import Container from "../models/Container.model";
+import Cour from "../models/Cour.model";
+import Section from "../models/Section.model";
 import database from "../config/db";
 
 main()

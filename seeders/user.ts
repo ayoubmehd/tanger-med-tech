@@ -1,7 +1,7 @@
 import User from "../models/User";
 import faker from "@faker-js/faker";
 import { genSalt, hash } from "bcrypt";
-import Role from "../models/Role";
+import Role from "../models/Role.model";
 import database from "../config/db";
 
 main()

@@ -1,10 +1,9 @@
 import faker from "@faker-js/faker";
 import database from "../config/db";
-import Container from "../models/Container";
-import { Container as TypeContainer } from "../@types/Container";
-import Position from "../models/Position";
-import Category from "../models/Category";
-import ContainerType from "../models/ContainerType";
+import ContainerModel from "../models/Container.model";
+import PositionModel from "../models/Position.model";
+import CategoryModel from "../models/Category.model";
+import ContainerTypeModel from "../models/ContainerType.model";
 
 main()
   .then(() => console.log("Seeded"))
@@ -14,7 +13,7 @@ main()
 async function main(): Promise<any> {
   await database();
 
-  const data: TypeContainer = {
+  const data: Container = {
     origin: faker.address.country(),
     position: {
       X: faker.datatype.float({ min: 0, max: 50 }),
@@ -26,12 +25,12 @@ async function main(): Promise<any> {
       Y: Math.floor(faker.datatype.number({ min: 2, max: 3 })),
       Z: Math.floor(faker.datatype.number({ min: 2, max: 3 })),
     },
-    category: await Category.create({
+    category: await CategoryModel.create({
       label: faker.lorem.word(),
     }),
-    type: await ContainerType.create({
+    type: await ContainerTypeModel.create({
       label: faker.lorem.word(),
     }),
   };
-  await Container.create(data);
+  await ContainerModel.create(data);
 }
