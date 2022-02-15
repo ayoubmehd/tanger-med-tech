@@ -1,3 +1,5 @@
+import "module-alias/register";
+
 import createError from "http-errors";
 import express from "express";
 import type { ErrorRequestHandler } from "express";
@@ -5,6 +7,8 @@ import path from "path";
 import cookieParser from "cookie-parser";
 import logger from "morgan";
 import router from "./routes";
+import db from "./config/db";
+
 require("dotenv").config();
 
 const app = express();
@@ -13,6 +17,8 @@ const env = process.env.NODE_ENV || "development";
 
 // Session setup
 const cookie = env === "development" ? {} : { secure: true };
+
+db().then(() => console.log("db connected"));
 
 app.set("trust proxy", 1); // trust first proxy
 
