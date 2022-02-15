@@ -1,7 +1,8 @@
 import { Router } from "express";
+import containers from "./container";
 
 const router = Router();
 
-router.get("/", (req, res) => res.json({ data: "Home" }));
+router.use("/containers", containers);
 
 export default router;
