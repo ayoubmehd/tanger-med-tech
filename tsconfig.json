@@ -1,6 +1,10 @@
 {
+    "ts-node": {
+        "files": true
+    },
     "display": "Node 16",
     "compilerOptions": {
+        "baseUrl": "./",
         "lib": [
             "es2021"
         ],
@@ -10,7 +14,22 @@
         "strict": true,
         "esModuleInterop": true,
         "skipLibCheck": true,
-        "forceConsistentCasingInFileNames": true
+        "forceConsistentCasingInFileNames": true,
+        "paths": {
+            "@controllers/*": [
+                "controllers/*"
+            ],
+            "@routes/*": [
+                "routes/*"
+            ],
+            "@repos/*": [
+                "repos/*"
+            ]
+        }
     },
-    "exclude": []
+    "exclude": [
+        "./scripts",
+        "./node_moules",
+        "seeders"
+    ],
 }
