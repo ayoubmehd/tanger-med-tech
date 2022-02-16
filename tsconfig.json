@@ -24,6 +24,12 @@
             ],
             "@repos/*": [
                 "repos/*"
+            ],
+            "@models/*": [
+                "models/*"
+            ],
+            "@middleware/*": [
+                "middleware/*"
             ]
         }
     },

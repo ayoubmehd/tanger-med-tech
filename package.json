@@ -11,7 +11,9 @@
   "_moduleAliases": {
     "@controllers": "controllers",
     "@routes": "routes",
-    "@repos": "repos"
+    "@repos": "repos",
+    "@models": "models",
+    "@middleware": "middleware"
   },
   "dependencies": {
     "@types/bcrypt": "^5.0.0",
@@ -19,6 +21,7 @@
     "cookie-parser": "^1.4.6",
     "dotenv": "^16.0.0",
     "express": "^4.17.2",
+    "jsonwebtoken": "^8.5.1",
     "module-alias": "^2.2.2",
     "mongoose": "^6.2.0"
   },
@@ -28,11 +31,13 @@
     "@types/cookie-parser": "^1.4.2",
     "@types/express": "^4.17.13",
     "@types/http-errors": "^1.8.2",
+    "@types/jsonwebtoken": "^8.5.8",
     "@types/mongoose-seeder": "^1.2.6",
     "@types/morgan": "^1.9.3",
     "@types/node": "^17.0.15",
     "@typescript-eslint/eslint-plugin": "^5.10.2",
     "@typescript-eslint/parser": "^5.10.2",
+    "envfile": "^6.17.0",
     "eslint": "^8.8.0",
     "inquirer": "^8.2.0",
     "mongoose-seeder": "^1.2.1",
