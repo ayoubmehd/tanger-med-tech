@@ -1,8 +1,11 @@
 import { Router } from "express";
 
 import * as container from "@controllers/container.controller";
+import auth from "@middleware/auth";
 
 const router = Router();
+
+router.use(auth);
 
 router.get("/", container.index);
 router.post("/", container.create);
