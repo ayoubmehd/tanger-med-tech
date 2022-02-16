@@ -5,10 +5,10 @@ type BaseRepo<T> = Reader<T> & Writer<T>;
 export default class MongoBaseRepo<T> implements BaseRepo<T> {
   constructor(public readonly model: Model<T>) {}
 
-  find(filter?: FilterQuery<T>): Promise<T[]> {
+  find(filter?: Partial<T>): Promise<T[]> {
     return this.model.find({ filter }).exec();
   }
-  findOne(filter: FilterQuery<T>): Promise<T | null> {
+  findOne(filter: Partial<T>): Promise<T | null> {
     return this.model.findOne(filter).exec();
   }
   findById(id: string | number): Promise<T | null> {
